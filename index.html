@@ -1,16 +1,60 @@
+<div class="w-full flex flex-col items-center justify-center relative">
+    <!-- Nút nhỏ, nổi lên trên mọi thứ, dính sát cạnh trên màn hình -->
+    <button id="toggleProfileBtn" class="fixed top-0 left-1/2 -translate-x-1/2 z-[9999] bg-white border border-gray-300 rounded-full shadow p-1 mt-1 hover:bg-gray-100 transition flex items-center justify-center" style="width:32px;height:32px;">
+        <svg id="arrowIcon" class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+        </svg>
+    </button>
+    <!-- Phần thông tin cá nhân, mặc định ẩn -->
+    <div id="profileSection" class="flex flex-col items-center justify-center py-8 w-full" style="display: none;">
+        <div class="flex items-center space-x-4">
+            <img src="https://avatars.githubusercontent.com/u/140427335?s=400&u=71a6579152ba8516799e7401dbfed7b742d7b34b&v=4" alt="Avatar" class="w-16 h-16 rounded-full border-2 border-red-500 shadow-md">
+            <div>
+                <h2 class="text-2xl font-bold text-red-600">Tạ Hồng Phúc</h2>
+                <p class="text-gray-700 text-sm">Start-date: 08/07/2025 | Complete-date: 14/07/2025</p>
+            </div>
+        </div>
+        <div class="mt-4 flex space-x-4">
+            <a href="mailto:taphuc1@gmail.com" class="text-gray-600 hover:text-red-500 transition-colors text-xl">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/andrew-taphuc" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors text-xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/phuc24092004/" target="_blank" class="text-gray-600 hover:text-red-500 transition-colors text-xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <div class="mt-4 text-gray-500 text-xs italic">
+        </div>
+    </div>
+</div>
+<script>
+    const btn = document.getElementById('toggleProfileBtn');
+    const section = document.getElementById('profileSection');
+    const arrowIcon = document.getElementById('arrowIcon');
+    let isOpen = false;
+    btn.addEventListener('click', function() {
+        isOpen = !isOpen;
+        section.style.display = isOpen ? 'flex' : 'none';
+        arrowIcon.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+    });
+</script>
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sun* Asterisk</title>
+    <title>Trang chủ - Sun* Inc. Tuyển Dụng</title>
+    <link rel="icon" type="image/png" href="https://sun-asterisk.vn/wp-content/uploads/2020/11/cropped-favicon-32x32.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white text-gray-800">
     <!-- Navigation -->
-    <nav class="bg-white py-4 shadow-sm sticky top-0 z-50">
+    <nav class="bg-white py-4 shadow-sm sticky top-0 z-50 mt-5">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <img src="resource/logosun.png" alt="Logo Sun*" class="h-10 w-auto">
             <ul class="hidden md:flex list-none m-0 p-0 gap-8">
