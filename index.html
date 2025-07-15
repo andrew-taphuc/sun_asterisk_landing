@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun* Asterisk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white py-4 shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <img src="resource/logosun.png" alt="Logo Sun*" class="h-10 w-auto">
+            <ul class="hidden md:flex list-none m-0 p-0 gap-8">
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Trang chủ</a></li>
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Về chúng tôi</a></li>
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Dự án</a></li>
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Cơ hội nghề nghiệp</a></li>
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Môi trường làm việc</a></li>
+                <li><a href="#" class="text-gray-800 font-medium hover:text-red-500 transition-colors">Tin tức</a></li>
+            </ul>
+            <button class="px-4 py-2 bg-gray-100 rounded hover:bg-gray-200 text-gray-800 font-medium transition-colors">VI/EN</button>
+        </div>
+    </nav>
+
+    <!-- Hero Video Section -->
+    <section class="overflow-hidden">
+        <video class="hero-video" src="./resource/mv-pc.mp4" autoplay muted playsinline loop></video>
+    </section>
+
+    <!-- Business Fields Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-6xl font-extrabold mb-12 text-left max-w-6xl mx-auto">Lĩnh vực kinh doanh</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto">
+                <div class="md:w-2/3 w-full md:pr-12 flex justify-center">
+                    <p class="text-left text-xl leading-relaxed max-w-2xl">
+                        Là một Digital Creative Studio, <span class="font-bold">Sun*</span> luôn đề cao tinh thần
+                        làm chủ sản phẩm, tư duy sáng tạo trong mỗi dự án để 
+                        mang đến những trải nghiệm "<strong class="text-2xl">Awesome</strong>" nhất cho end-user.<br>
+                        Với hai dòng dịch vụ là "<strong class="text-2xl">Creative & Engineering</strong>" và "<strong class="text-2xl">Talent Platform</strong>", Sun* đã và đang từng bước cùng công nghệ tạo ra những giá trị tốt đẹp cho xã hội.
+                    </p>
+                </div>
+                <div class="md:w-1/3 w-full flex justify-center mt-12 md:mt-0">
+                    <img src="https://sun-asterisk.vn/wp-content/uploads/2020/11/intro-business.png" alt="Lĩnh vực kinh doanh" class="w-full h-auto max-w-2xl md:max-w-3xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 flex flex-col md:flex-row gap-8">
+            <!-- Creative & Engineering Card -->
+            <div class="service-card relative flex flex-col justify-between bg-red-600 text-white rounded-2xl shadow-lg w-full md:w-1/2 p-8 overflow-hidden">
+                <span class="absolute top-6 left-6 flex items-center z-20">
+                    <span class="w-6 h-6 bg-white opacity-30 rounded-full mr-2"></span>
+                    <span class="text-sm opacity-80">Digital Creative Studio</span>
+                </span>
+                <div class="flex-1 flex flex-col justify-center mt-12">
+                    <h3 class="text-3xl font-extrabold mb-2 leading-tight">Creative<br>&amp; Engineering</h3>
+                    <p class="mb-8 text-base leading-relaxed">Đội ngũ nhân lực dồi dào chuyên về công nghệ, thiết kế và kinh doanh.</p>
+                </div>
+                <button class="btn-primary w-full max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-4 bg-white text-red-600 font-bold text-lg rounded-xl shadow">
+                    Tìm hiểu thêm
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Talent Platform Card -->
+            <div class="service-card relative flex flex-col justify-between bg-white text-gray-900 rounded-2xl shadow-lg w-full md:w-1/2 p-8 overflow-hidden">
+                <span class="absolute top-6 left-6 flex items-center z-20">
+                    <span class="w-6 h-6 bg-gray-900 opacity-30 rounded-full mr-2"></span>
+                    <span class="text-sm opacity-80">Talent Platform</span>
+                </span>
+                <div class="flex-1 flex flex-col justify-center mt-12">
+                    <h3 class="text-3xl font-extrabold mb-2 leading-tight">Talent<br>Platform</h3>
+                    <p class="mb-8 text-base leading-relaxed">Các giải pháp nguồn nhân lực hỗ trợ tăng trưởng kinh doanh bền vững.</p>
+                </div>
+                <button class="w-full max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-4 bg-gray-900 text-white font-bold text-lg rounded-xl shadow hover:bg-gray-800 transition">
+                    Tìm hiểu thêm
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-6xl font-extrabold mb-12 text-left max-w-6xl mx-auto">Dự án của chúng tôi</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto">
+                <!-- Left side - Statistics -->
+                <div class="flex flex-col items-start gap-8 w-full md:w-1/2">
+                    <div class="flex items-end gap-2">
+                        <span class="stats-number text-6xl md:text-7xl font-extrabold">200</span>
+                        <div class="flex flex-col items-start ml-1">
+                            <span class="text-2xl font-bold text-red-600">++</span>
+                            <span class="text-lg font-medium text-gray-700 mb-2">Đối tác</span>
+                        </div>
+                    </div>
+                    <div class="flex items-end gap-2">
+                        <span class="stats-number text-6xl md:text-7xl font-extrabold">100</span>
+                        <div class="flex flex-col items-start ml-1">
+                            <span class="text-2xl font-bold text-red-600">++</span>
+                            <span class="text-lg font-medium text-gray-700 mb-2">Dịch vụ được hỗ trợ</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 px-8 py-4 bg-gray-800 text-white font-bold rounded-lg shadow hover:bg-gray-900 transition flex items-center gap-2">
+                        Xem tất cả dự án
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Right side - Project Card -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="project-card relative bg-white rounded-2xl shadow-lg p-6 w-full max-w-xs flex flex-col justify-between border border-gray-100">
+                        <div class="mb-4">
+                            <img src="https://sun-asterisk.vn/wp-content/uploads/2021/02/Untitled-2.png" alt="KURASHICOM" class="rounded-lg w-full object-cover mb-4 opacity-80" style="min-height:120px;max-height:140px;">
+                            <span class="block text-xs text-gray-400 mb-1">Kurashicom</span>
+                            <h3 class="font-bold text-lg text-gray-900 mb-2">Dự án KURASHICOM</h3>
+                            <p class="text-gray-700 text-sm">Phát triển App giúp hiện thực hóa phong cách sống đúng như ý muốn.</p>
+                        </div>
+                        <a href="#" class="text-red-600 font-semibold text-sm mt-2 hover:underline">Xem chi tiết</a>
+                        
+                        <!-- Navigation buttons -->
+                        <div class="flex justify-center gap-4 mt-6">
+                            <button class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-gray-50 hover:bg-gray-200 transition">
+                                <i class="fas fa-chevron-left text-gray-700"></i>
+                            </button>
+                            <button class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 bg-gray-50 hover:bg-gray-200 transition">
+                                <i class="fas fa-chevron-right text-gray-700"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Section -->
+    <section class="py-16">
+        <div class="flex justify-center items-center px-4">
+            <div class="career-bg relative w-full max-w-7xl h-[604px] rounded-2xl overflow-hidden">
+                <div class="career-overlay absolute inset-0"></div>
+                <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-8">
+                    <!-- Top section with circle -->
+                    <div class="relative flex flex-col items-center mb-32">
+                        <div class="circle-bg"></div>
+                        <span class="text-sm font-normal mb-1 z-10">Sun Asterisk</span>
+                        <h2 class="text-4xl md:text-6xl font-bold mb-2 mt-2 tracking-wider z-10">Cơ hội nghề nghiệp</h2>
+                    </div>
+                    
+                    <!-- Bottom section -->
+                    <div class="z-10 flex flex-col items-center">
+                        <span class="block text-lg md:text-xl font-semibold mb-2">
+                            Join us &amp; <span class="font-extrabold">MAKE AWESOME THINGS THAT MATTER.</span>
+                        </span>
+                        <p class="text-base md:text-lg font-normal mb-2">
+                            Sun* luôn tìm kiếm những con người đam mê thử thách để tạo nên những giá trị "Awesome".
+                        </p>
+                        <p class="text-base md:text-lg font-normal mb-6">
+                            Cùng trở thành một phần của Sun* ngay hôm nay.
+                        </p>
+                        <button class="bg-white text-red-600 font-bold rounded-lg px-8 py-4 shadow-lg hover:bg-gray-100 transition text-base md:text-lg" style="min-width: 300px;">
+                            Gia nhập đội ngũ Sun*
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Environment Section -->
+    <section class="px-4 py-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
+            <!-- Left column -->
+            <div class="flex-1 flex flex-col justify-center">
+                <h2 class="text-center md:text-left text-4xl md:text-5xl font-extrabold mb-6 tracking-tight leading-tight">
+                    Môi trường làm việc
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-red-600 text-white mt-1 mr-3">
+                            <i class="fas fa-check text-xs"></i>
+                        </span>
+                        <div>
+                            <div class="font-semibold">#ActiveChallenge: Chủ động tạo ra công việc thử thách liên tục cho bản thân.</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-red-600 text-white mt-1 mr-3">
+                            <i class="fas fa-check text-xs"></i>
+                        </span>
+                        <div>
+                            <div class="font-semibold">#ActiveLearn: Học tập trong một tổ chức có đầy đủ các thành tố: môi trường học tập, cơ hội học tập, năng lực học tập.</div>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 flex items-center justify-center rounded-full bg-red-600 text-white mt-1 mr-3">
+                            <i class="fas fa-check text-xs"></i>
+                        </span>
+                        <div>
+                            <div class="font-semibold">#ActiveJoy: Sống trong môi trường văn hóa hướng tới giá trị nhân văn, và hạnh phúc cho mọi người.</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Right column -->
+            <div class="flex-1 flex flex-col items-center justify-center">
+                <div class="relative w-full flex flex-col items-center">
+                    <img src="https://sun-asterisk.vn/wp-content/uploads/2023/09/human-centered.png" alt="Sun* Inc. Tuyển Dụng" class="rounded-xl mb-0 max-w-full">
+                    <a href="https://sun-asterisk.vn/chinh-sach-phuc-loi/"
+                       class="absolute left-1/2 -translate-x-1/2 -bottom-6 inline-flex items-center bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-800 transition shadow-lg"
+                       style="min-width: 200px;">
+                        Xem chi tiết
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <div class="h-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Events Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h3 class="text-5xl font-extrabold mb-12 text-left">Văn hóa - Sự kiện</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- News Card 1 -->
+            <div class="news-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                <div class="relative">
+                    <img src="https://news.sun-asterisk.com/images/440x248/1f30a6d8-342c-4186-a9a0-d6190995cc81.png" alt="TechTalk #2" class="w-full h-40 object-cover">
+                    <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">Tin nóng</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="font-semibold text-lg mb-2">Hệ bộ tài liệu độc quyền siêu HOT và giải đáp toàn bộ thắc mắc kỹ thuật sau TechUp #2</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-1">Hệ bộ tài liệu quý giá từ các chuyên gia, cùng phần chia sẻ chi tiết các vấn đề kỹ thuật nổi bật nhất, dành riêng cho các thành viên Sun* đam mê công nghệ.</p>
+                    <a href="#" class="text-red-600 font-semibold mt-auto flex items-center gap-1 hover:underline">
+                        Xem chi tiết
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- News Card 2 -->
+            <div class="news-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                <div class="relative">
+                    <img src="https://news.sun-asterisk.com/images/440x248/7c2f69b3-631b-4b2a-aabc-4eddf1bf8359.png" alt="TechUp #12" class="w-full h-40 object-cover">
+                    <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">Tin nóng</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="font-semibold text-lg mb-2">Nóng: Chính thức mở đăng ký TechUp #12 - Ứng dụng AI và sản xuất lập trình và tạo ra sản phẩm đột phá</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-1">TechUp #12 sẽ mang đến những kiến thức mới nhất về AI, lập trình và sản xuất sản phẩm, dành cho các thành viên Sun* muốn bứt phá trong năm 2024.</p>
+                    <a href="#" class="text-red-600 font-semibold mt-auto flex items-center gap-1 hover:underline">
+                        Xem chi tiết
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- News Card 3 -->
+            <div class="news-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col">
+                <div class="relative">
+                    <img src="https://news.sun-asterisk.com/images/440x248/0975f17b-89f3-4eab-a4fd-33b55df9d80d.jpg" alt="Insurance SaaS" class="w-full h-40 object-cover">
+                    <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-semibold px-4 py-1 rounded-full shadow">Tin nóng</span>
+                </div>
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="font-semibold text-lg mb-2">Dự án Insurance SaaS Development Support: Golang, VueJS trở thành "chất xúc tác" để Sunner vượt giới hạn</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-1">"Đề bài càng hóc búa, càng hấp dẫn để xông pha", "Ngôn ngữ mới không phải rào cản, mà chính là cơ hội để chứng minh năng lực" là</p>
+                    <a href="#" class="text-red-600 font-semibold mt-auto flex items-center gap-1 hover:underline">
+                        Xem chi tiết
+                        <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Learn More Button -->
+        <div class="flex justify-center mt-8">
+            <button class="w-full max-w-xs mx-auto flex items-center justify-center gap-2 px-6 py-4 bg-black text-white font-bold text-lg rounded-xl shadow transition hover:bg-gray-800">
+                Tìm hiểu thêm
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-16 px-6 text-gray-600">
+        <div class="max-w-7xl mx-auto">
+            <!-- Logo -->
+            <div class="mb-12">
+                <div class="text-4xl font-bold text-red-500">Sun*</div>
+            </div>
+            
+            <!-- Main Content Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+                <!-- Who we are -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6">Chúng tôi là ai?</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Tâm nhìn, Sứ mệnh</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Giá trị cốt lõi</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Ý nghĩa tên Sun*</a></li>
+                    </ul>
+                </div>
+                
+                <!-- What we do -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6">Chúng tôi làm gì?</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Creative & Engineering</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Talent Platform</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Dự án của chúng tôi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- News updates -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6">Cập nhật tin tức</h3>
+                    <ul class="space-y-4">
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Văn hóa - Sự kiện</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Tuyển dụng</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Chính sách phúc lợi</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6">Liên hệ</h3>
+                    <div class="space-y-4 text-sm">
+                        <p>SĐT: 84-24-3755-5417</p>
+                        <p>Email: hr@sun-asterisk.com</p>
+                    </div>
+                </div>
+                
+                <!-- Office -->
+                <div class="lg:col-span-1">
+                    <h3 class="text-lg font-semibold mb-6">Văn phòng</h3>
+                    <div class="space-y-4 text-sm">
+                        <p>T13, Keangnam Hanoi Landmark Tower, khu E6, khu ĐTM Cầu Giấy, phường Mễ Trì, quận Nam Từ Liêm, Hà Nội</p>
+                        <p>Tầng 4, tòa FHome Building, số 16 Lý Thường Kiệt, quận Hải Châu, Tp. Đà Nẵng</p>
+                        <p>Tầng 9, L'Mak Long Tower, số 101-103 Nguyễn Cửu Vân, Phường 17, Quận Bình Thạnh, Thành phố Hồ Chí Minh.</p>
+                        <p>Văn phòng Tokyo - Văn phòng Cebu - Văn phòng Phnom Penh</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-200 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+                    <!-- Copyright and Legal -->
+                    <div class="mb-6 lg:mb-0 text-sm">
+                        <p class="mb-2">© 2021 Sun-asterisk. All rights reserved.</p>
+                        <div class="space-y-2">
+                            <p>Giấy chứng nhận ĐKKD: 0106045931 do Sở KHĐT TP Hà Nội cấp lần đầu ngày 29/10/2012</p>
+                            <p>Giấy phép hoạt động ĐVVT: 03/2022 do Sở LĐTBXH TP H
